@@ -56,6 +56,7 @@ public sealed partial class ShipyardConsoleMenu : FancyWindow
     {
         SetClassText(args.Id);
         PopulateProducts(_lastAvailableProtos, _lastUnavailableProtos, _freeListings, _validId);
+
     }
 
     private void OnEngineItemSelected(OptionButton.ItemSelectedEventArgs args)
@@ -79,6 +80,7 @@ public sealed partial class ShipyardConsoleMenu : FancyWindow
         _class = id == 0 ? null : _classStrings[id];
         Classes.SelectId(id);
     }
+
     private void SetEngineText(int id)
     {
         _engine = id == 0 ? null : _engineStrings[id];

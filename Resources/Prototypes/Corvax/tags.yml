@@ -1,0 +1,47 @@
+- type: Tag
+  id: CartridgeVector22
+
+- type: Tag
+  id: CartridgeVector45
+
+- type: Tag
+  id: MagazineVector22
+
+- type: Tag
+  id: MagazineVector45
+
+- type: Tag
+  id: MagazineP90LRK
+
+- type: Tag
+  id: ShuttleShotgunShellsBox
+
+- type: Tag
+  id: ShuttleRifleAmmoBox
+
+- type: Tag
+  id: ShuttleSmgRifleAmmoBox
+
+- type: Tag
+  id: ShuttleMagnumRifleAmmoBox
+
+- type: Tag
+  id: Postman
+
+- type: Tag
+  id: ShellKS23
+
+- type: Tag
+  id: ColiseumGrenade
+
+- type: Tag
+  id: ColiseumMagazineGrenade
+
+- type: Tag
+  id: ColiseumCoin
+  
+- type: Tag
+  id: SolarAssemblyFlatpack
+
+- type: Tag
+  id: Jetpack

@@ -45,6 +45,7 @@
       - id: CommsComputerCircuitboard # Frontier
       - id: MedalCase # Frontier
       - id: Demag # Frontier
+      - id: GarmentBagFilledSR # Corvax-Frontier
 
 - type: entity
   id: LockerNfsdSheriffFilled
@@ -74,3 +75,16 @@
       amount: 1
     - id: MagazinePistol
       amount: 2
+
+# Corvax-Frontier addition
+- type: entity
+  id: CFLockerNfsdSheriffFilled
+  suffix: Filled
+  parent: LockerNfsdSheriff
+  components:
+  - type: StorageFill
+    contents:
+      - id: ShriffIDCard
+      - id: MedalCaseNfsd
+      - id: Demag
+      - id: GarmentBagFilledSheriff

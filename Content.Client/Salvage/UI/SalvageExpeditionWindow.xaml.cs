@@ -195,8 +195,6 @@ public sealed partial class SalvageExpeditionWindow : FancyWindow,
                 Margin = new Thickness(0f, 0f, 0f, 5f),
             });
 
-            // Frontier: only show rewards if enabled via cvar and not empty
-            if (_cfgManager.GetCVar(NFCCVars.SalvageExpeditionRewardsEnabled) && mission.Rewards.Count > 0)
             {
                 lBox.AddChild(new Label()
                 {

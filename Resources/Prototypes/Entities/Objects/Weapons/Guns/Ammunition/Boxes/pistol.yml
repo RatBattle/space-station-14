@@ -23,7 +23,9 @@
     steps: 3
     zeroVisible: false
   - type: Appearance
-
+  - type: StaticPrice #CorvaxFrontier
+    price: 125
+    
 # Boxes
 - type: entity
   parent: BaseMagazineBoxPistol
@@ -55,7 +57,7 @@
     - state: practice
 
 - type: entity
-  parent: BaseMagazineBoxPistol
+  parent: [BaseMagazineBoxPistol, BaseC2ContrabandUnredeemable] #Corvax-Frontier КБ
   id: MagazineBoxPistolIncendiary
   name: ammunition box (.35 auto incendiary)
   components:
@@ -71,7 +73,7 @@
 
 - type: entity
   id: MagazineBoxPistolUranium
-  parent: BaseMagazineBoxPistol
+  parent: [BaseMagazineBoxPistol, BaseC2ContrabandUnredeemable] #Corvax-Frontier КБ
   name: ammunition box (.35 auto uranium)
   components:
   - type: BallisticAmmoProvider

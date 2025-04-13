@@ -1,7 +1,6 @@
 # Author Info
 # GitHub: starch70
 # Discord: _starch_
-
 # Shuttle Notes:
 #
 - type: vessel
@@ -38,3 +37,38 @@
             Contractor: [ 0, 0 ]
             Pilot: [ 0, 0 ]
             Mercenary: [ 0, 0 ]
+# # Shuttle Notes:
+# #
+# - type: vessel
+  # id: Loader
+  # name: NC Loader
+  # description: A compact cargo ship designed for hauling shipments.
+  # price: 22000
+  # category: Small
+  # group: Shipyard
+  # shuttlePath: /Maps/_NF/Shuttles/loader.yml
+  # guidebookPage: ShipyardLoader
+  # class:
+  # - Cargo
+  # engine:
+  # - Plasma
+
+# - type: gameMap
+  # id: Loader
+  # mapName: 'NC Loader'
+  # mapPath: /Maps/_NF/Shuttles/loader.yml
+  # minPlayers: 0
+  # stations:
+    # Loader:
+      # stationProto: StandardFrontierVessel
+      # components:
+        # - type: StationNameSetup
+          # mapNameTemplate: 'Loader {1}'
+          # nameGenerator:
+            # !type:NanotrasenNameGenerator
+            # prefixCreator: '14'
+        # - type: StationJobs
+          # availableJobs:
+            # Contractor: [ 0, 0 ]
+            # Pilot: [ 0, 0 ]
+            # Mercenary: [ 0, 0 ]

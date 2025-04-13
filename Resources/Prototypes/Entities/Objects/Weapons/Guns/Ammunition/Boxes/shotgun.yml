@@ -29,7 +29,8 @@
       steps: 5
       zeroVisible: false
     - type: Appearance
-
+    - type: StaticPrice
+      price: 125 #CorvaxFrontier
 # Shotgun Shells
 - type: entity
   parent: AmmoProviderShotgunShell
@@ -105,7 +106,7 @@
 
 - type: entity
   name: shell box (incendiary)
-  parent: AmmoProviderShotgunShell
+  parent: [AmmoProviderShotgunShell, BaseC2ContrabandUnredeemable] #Corvax-Frontier КБ
   id: BoxShotgunIncendiary
   components:
     - type: BallisticAmmoProvider
@@ -124,7 +125,7 @@
 
 - type: entity
   name: shell box (uranium)
-  parent: AmmoProviderShotgunShell
+  parent: [AmmoProviderShotgunShell, BaseC2ContrabandUnredeemable] #Corvax-Frontier КБ
   id: BoxShotgunUranium
   components:
     - type: BallisticAmmoProvider

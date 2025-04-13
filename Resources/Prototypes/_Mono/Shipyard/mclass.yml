@@ -1,7 +1,6 @@
 # Author Info
 # GitHub: starch70
 # Discord: _starch_
-
 # Shuttle Notes:
 #
 - type: vessel
@@ -38,3 +37,39 @@
             Contractor: [ 0, 0 ]
             Pilot: [ 0, 0 ]
             Mercenary: [ 0, 0 ]
+# # Shuttle Notes:
+# #
+# - type: vessel
+  # id: Comet
+  # name: NT Comet
+  # description: A mining and construction vessel intended to help build or repair quickly.
+  # price: 55000
+  # category: Medium
+  # group: Shipyard
+  # shuttlePath: /Maps/_NF/Shuttles/comet.yml
+  # guidebookPage: ShipyardComet
+  # class:
+  # - Salvage
+  # - Engineering
+  # engine:
+  # - AME
+
+# - type: gameMap
+  # id: Comet
+  # mapName: 'NT Comet'
+  # mapPath: /Maps/_NF/Shuttles/comet.yml
+  # minPlayers: 0
+  # stations:
+    # Comet:
+      # stationProto: StandardFrontierVessel
+      # components:
+        # - type: StationNameSetup
+          # mapNameTemplate: 'Comet {1}'
+          # nameGenerator:
+            # !type:NanotrasenNameGenerator
+            # prefixCreator: '14'
+        # - type: StationJobs
+          # availableJobs:
+            # Contractor: [ 0, 0 ]
+            # Pilot: [ 0, 0 ]
+            # Mercenary: [ 0, 0 ]

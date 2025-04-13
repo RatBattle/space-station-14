@@ -93,6 +93,7 @@ namespace Content.Client.Input
             human.AddFunction(ContentKeyFunctions.TargetLeftLeg);
             human.AddFunction(ContentKeyFunctions.TargetRightLeg);
             // Shitmed Change End
+            human.AddFunction(ContentKeyFunctions.OfferItem); // Corvax-Frontier
 
             // actions should be common (for ghosts, mobs, etc)
             common.AddFunction(ContentKeyFunctions.OpenActionsMenu);

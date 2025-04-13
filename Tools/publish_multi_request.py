@@ -8,6 +8,7 @@ from typing import Iterable
 
 PUBLISH_TOKEN = os.environ["PUBLISH_TOKEN"]
 VERSION = os.environ["GITHUB_SHA"]
+FORK_ID = "frontier"
 
 RELEASE_DIR = "release"
 
@@ -15,8 +16,12 @@ RELEASE_DIR = "release"
 # CONFIGURATION PARAMETERS
 # Forks should change these to publish to their own infrastructure.
 #
+<<<<<<< HEAD
 ROBUST_CDN_URL = "https://cdn.project-monolith.xyz/"
 FORK_ID = "monolith"
+=======
+ROBUST_CDN_URL = "https://cdn.corvaxforge.ru/"
+>>>>>>> r1remote/master
 
 def main():
     parser = argparse.ArgumentParser()

@@ -33,6 +33,7 @@
 - type: startingGear
   id: SrGear
   equipment:
+    id: SrPDA
     pocket1: WeaponDisabler
   storage:
     back:

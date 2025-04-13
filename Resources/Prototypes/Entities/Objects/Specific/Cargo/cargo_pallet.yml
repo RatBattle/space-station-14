@@ -5,6 +5,7 @@
   parent: [BaseStructureDisableToolUse, BaseStructureIndestructible, BaseStructure] # Frontier - BaseStructureDisabledToolsUse,BaseStructureIndestructible
   components:
   - type: InteractionOutline
+  - type: CargoPallet # Corvax-Frontier
   - type: Anchorable
     flags:
     - Anchorable

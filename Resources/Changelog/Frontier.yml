@@ -7517,7 +7517,7 @@ Entries:
     - type: Add
       message: >-
         Add a class 1, civilian-grade bananium generator, researchable through
-        science and printable through blueprints. 
+        science and printable through blueprints.
   id: 5812
   time: '2025-03-01T14:13:31.0000000+00:00'
 - author: Alkheemist
@@ -7777,4 +7777,3 @@ Entries:
       message: Non random o2/n2 locker fill options.
   id: 5844
   time: '2025-03-09T21:50:32.0000000+00:00'
-Order: 1 # Mono

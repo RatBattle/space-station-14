@@ -132,7 +132,7 @@
   configs:
     DefenseStructure: CybersunDataMiner
     Mining: Syndicate
-    Megafauna: MobSyndicateNavalCommanderA
+    Megafauna: MobSyndicateNavalCaptainG #CorvaxFrontier
 
 - type: salvageFaction
   id: Cultists

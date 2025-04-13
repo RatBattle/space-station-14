@@ -107,13 +107,14 @@
     - NFSalvageTechfabDeprecatedStatic
     dynamicPacks:
     - NFSalvageTechfabDeprecated
+    - CorvaxMagmiteEquipment
   - type: EmagLatheRecipes
     emagStaticPacks:
     - NFSalvageTechfabDeprecatedEmag
 
 - type: entity
   id: NfsdTechFab
-  parent: [ BlueprintReceiverBase, SecurityTechFab ]
+  parent: [ BlueprintReceiverBase, SecurityTechFab, BaseC2ContrabandUnredeemable] #Corvax-Frontier КБ
   name: NFSD techfab
   description: Prints equipment for use by NFSD.
   components:
@@ -137,8 +138,12 @@
     runningState: icon
     staticPacks:
     - NFNfsdTechfabDeprecatedStatic
+    - CorvaxAmmoStatic #Corvax-Frontier
     dynamicPacks:
     - NFNfsdTechfabDeprecated
+    - CorvaxShuttleGunsDynamic #Corvax-Frontier
+    - CorvaxAmmoDynamic #Corvax-Frontier
+    - CorvaxPracticAmmo #Corvax-Frontier
   - type: EmagLatheRecipes
     emagStaticPacks:
     - NFNfsdTechfabDeprecatedEmag
@@ -169,7 +174,9 @@
     runningState: icon
     staticPacks:
     - NFMercenaryTechfabDeprecatedStatic
+    - CorvaxAmmoStatic #Corvax-Frontier
     dynamicPacks:
+    - CorvaxPracticAmmo #Corvax-Frontier
     - NFMercenaryTechfabDeprecated
   - type: EmagLatheRecipes
     emagStaticPacks:
@@ -214,8 +221,10 @@
     runningState: icon
     staticPacks:
     - NFHackedMercenaryTechfabDeprecatedStatic
+    - CorvaxAmmoStatic #Corvax-Frontier
     dynamicPacks:
     - NFHackedMercenaryTechfabDeprecated
+    - CorvaxPracticAmmo #Corvax-Frontier
 
 - type: entity
   parent: [BaseStructureDisableToolUse, BaseLathe]

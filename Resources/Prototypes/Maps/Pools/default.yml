@@ -1,7 +1,8 @@
 - type: gameMapPool
   id: DefaultMapPool
   maps:
-  - Frontier
+#  - Frontier
+  - corvaxFrontier #Corvax-Frontier
 
 # Frontier: below are the upstream map pools.
   # - Amber

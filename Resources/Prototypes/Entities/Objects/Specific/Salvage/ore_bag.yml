@@ -56,3 +56,5 @@
           True: { visible: True }
           False: { visible: False }
   # End DeltaV Additions
+  - type: StaticPrice #CorvaxFrontier
+    price: 8 #CorvaxFrontier

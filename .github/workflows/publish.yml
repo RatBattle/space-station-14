@@ -6,6 +6,11 @@ concurrency:
 on:
   workflow_dispatch:
   # Frontier: re-enabled autopublish
+<<<<<<< HEAD
+=======
+  #schedule:
+  #  - cron: '0 10 * * *'
+>>>>>>> r1remote/master
 
 jobs:
   build:

@@ -42,6 +42,10 @@
 #   - MagazineBoxLightRifleIncendiary
 #   - MagazineBoxRifleIncendiary
 # #   - SpeedLoaderRifleHeavyIncendiary # Frontier
+#   - MagazineVector22Incendiary #CorvaxFrontier
+#   - MagazineBoxVector22Incendiary #CorvaxFrontier
+#   - MagazineVector45Incendiary #CorvaxFrontier
+#   - MagazineBoxVector45Incendiary #CorvaxFrontier
 
 # End Frontier: restricted arsenal research
 
@@ -75,6 +79,12 @@
   - MagazineBoxMagnumRubber # Frontier
   - MagazineBoxPistolRubber # Frontier
   - MagazineBoxRifleRubber # Frontier
+  - BoxSmokeKS23 # Corvax-Frontier
+  - BoxFlashbangKS23 # Corvax-Frontier
+  - MagazineBoxVector22Practice #CorvaxFrontier
+  - MagazineVector22Practice #CorvaxFrontier
+  - MagazineBoxVector45Practice #CorvaxFrontier
+  - MagazineVector45Practice #CorvaxFrontier
 
 # Frontier: restricted arsenal research
 
@@ -99,6 +109,10 @@
 #   - MagazineBoxRifleUranium
 #   - BoxShotgunUranium
 # #  - SpeedLoaderRifleHeavyUranium # Frontier
+#   - MagazineBoxVector22Uranium #CorvaxFrontier
+#   - MagazineVector22Uranium #CorvaxFrontier
+#   - MagazineBoxVector45Uranium #CorvaxFrontier
+#   - MagazineVector45Uranium #CorvaxFrontier
 
 # End Frontier: restricted arsenal research
 
@@ -242,3 +256,41 @@
 #  - ShuttleGunDusterCircuitboard # Frontier
 #  technologyPrerequisites:
 #  - BasicShuttleArmament
+
+- type: technology #Corvax-Frontier
+  id: VariousShuttleWeapons
+  name: research-technology-various-shuttle-weapons
+  icon:
+    sprite: Corvax/Objects/Weapons/Guns/Ammunition/Magazine/rifle_cartridges.rsi
+    state: 35base
+  discipline: Arsenal
+  tier: 3
+  cost: 30000
+  recipeUnlocks:
+    - ShuttleShotgunMachineCircuitboard
+    - ShuttleGunAntiMaterialMachineCircuitboard
+    - ShuttleLightRifleGunMachineCircuitboard
+    - ShuttleSMGRifleMachineCircuitboard
+    - ShuttleMagnumRifleMachineCircuitboard
+    - ShuttleShotgunShellsBox
+    - ShuttleSmgRifleAmmoBox
+    - ShuttleRifleAmmoBox
+    - ShuttleMagnumRifleAmmoBox
+  technologyPrerequisites:
+  - BasicShuttleArmament
+
+- type: technology # Corvax-Frontier
+  id: AdvancedSalvage
+  name: research-technology-advanced-salvage
+  icon:
+    sprite: Corvax/Objects/Weapons/Melee/magmitecrusher.rsi
+    state: icon
+  discipline: Arsenal
+  tier: 3
+  cost: 20000
+  recipeUnlocks:
+    - WeaponMagmiteCrusher
+    - WeaponMagmiteCrusherGlaive
+  technologyPrerequisites:
+  - SalvageWeapons
+  - MagnetsTech

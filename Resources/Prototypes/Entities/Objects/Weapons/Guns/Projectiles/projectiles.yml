@@ -450,7 +450,7 @@
     damage:
       types:
         Blunt: 0.5 # Frontier 30<0.5
-        Structural: 1 # Frontier 35<1
+        Structural: 1 # Frontier 35<1 
   - type: Ammo
     muzzleFlash: HitscanEffect
   - type: TimedDespawn

@@ -204,11 +204,12 @@ public sealed class NFAdventureRuleSystem : GameRuleSystem<NFAdventureRuleCompon
     {
         var mapUid = GameTicker.DefaultMap;
 
-        //First, we need to grab the list and sort it into its respective spawning logics
-        List<PointOfInterestPrototype> depotProtos = [];
-        List<PointOfInterestPrototype> marketProtos = [];
-        List<PointOfInterestPrototype> requiredProtos = [];
-        List<PointOfInterestPrototype> optionalProtos = [];
+        // First, we need to grab the list and sort it into its respective spawning logics
+        List<PointOfInterestPrototype> depotProtos = new();
+        List<PointOfInterestPrototype> marketProtos = new();
+        List<PointOfInterestPrototype> requiredProtos = new();
+        List<PointOfInterestPrototype> optionalProtos = new();
+        List<PointOfInterestPrototype> coliseiProtos = new(); // Corvax-Frontier
         Dictionary<string, List<PointOfInterestPrototype>> remainingUniqueProtosBySpawnGroup = new();
 
         var currentPreset = _ticker.CurrentPreset?.ID ?? _fallbackPresetID;
@@ -219,39 +220,34 @@ public sealed class NFAdventureRuleSystem : GameRuleSystem<NFAdventureRuleCompon
             if (location.SpawnGamePreset.Length > 0 && !location.SpawnGamePreset.Contains(currentPreset))
                 continue;
 
-            switch (location.SpawnGroup)
+            if (location.SpawnGroup == "CargoDepot")
+                depotProtos.Add(location);
+            else if (location.SpawnGroup == "MarketStation")
+                marketProtos.Add(location);
+            else if (location.SpawnGroup == "Required")
+                requiredProtos.Add(location);
+            else if (location.SpawnGroup == "Optional")
+                optionalProtos.Add(location);
+            else if (location.SpawnGroup == "NewMapsgGrid") // Corvax-Frontier
+                coliseiProtos.Add(location); // Corvax-Frontier
+            else // the remainder are done on a per-poi-per-group basis
             {
-                case "CargoDepot":
-                    depotProtos.Add(location);
-                    break;
-                case "MarketStation":
-                    marketProtos.Add(location);
-                    break;
-                case "Required":
-                    requiredProtos.Add(location);
-                    break;
-                case "Optional":
-                    optionalProtos.Add(location);
-                    break;
-                // the remainder are done on a per-poi-per-group basis
-                default:
-                {
-                    if (!remainingUniqueProtosBySpawnGroup.ContainsKey(location.SpawnGroup))
-                        remainingUniqueProtosBySpawnGroup[location.SpawnGroup] = new();
-                    remainingUniqueProtosBySpawnGroup[location.SpawnGroup].Add(location);
-                    break;
-                }
+                if (!remainingUniqueProtosBySpawnGroup.ContainsKey(location.SpawnGroup))
+                    remainingUniqueProtosBySpawnGroup[location.SpawnGroup] = new();
+                remainingUniqueProtosBySpawnGroup[location.SpawnGroup].Add(location);
             }
         }
+
         _poi.GenerateDepots(mapUid, depotProtos, out component.CargoDepots);
         _poi.GenerateMarkets(mapUid, marketProtos, out component.MarketStations);
         _poi.GenerateRequireds(mapUid, requiredProtos, out component.RequiredPois);
         _poi.GenerateOptionals(mapUid, optionalProtos, out component.OptionalPois);
         _poi.GenerateUniques(mapUid, remainingUniqueProtosBySpawnGroup, out component.UniquePois);
+        _poi.GeneratNewMapsgGrid(mapUid, coliseiProtos, out component.ColiseiPois); // Corvax-Frontier
 
         base.Started(uid, component, gameRule, args);
 
-        // Using invalid entity, we don't have a relevant entity to reference here.
+        // Using invalid entity; we don't have a relevant entity to reference here.
         RaiseLocalEvent(EntityUid.Invalid, new StationsGeneratedEvent(), broadcast: true); // TODO: attach this to a meaningful entity.
     }
 

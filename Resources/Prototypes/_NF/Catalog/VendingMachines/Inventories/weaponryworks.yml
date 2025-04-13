@@ -2,10 +2,11 @@
   id: WeaponryWorksVendInventory
   startingInventory:
     SurvivalKnife: 1
-    WeaponBrassKnuckles: 1
-    WeaponLaserPistolNF: 1
-    WeaponRifleGestio: 1
+    WeaponBrassKnuckles: 1 
+    WeaponLaserPistolNF: 1 
+    WeaponRifleGestio: 1 
     WeaponRifleNovaliteC1: 1
+    WeaponSubMachineGunVector45: 1 #CorvaxFrontier
     WeaponShotgunDoubleBarreled: 1
     WeaponRevolverArgenti: 1
     WeaponPistolUniversal: 1
@@ -13,6 +14,7 @@
     BoxShotgunSlug: 1
     BoxLethalshot: 1
     BoxBeanbag: 1
+    MagazineBoxVector45: 1 #CorvaxFrontier
     MagazineBoxRifle: 2
     MagazineBoxRifleRubber: 2
     MagazineBoxLightRifle: 2
@@ -25,6 +27,7 @@
     MagazineNovaliteC1Empty: 1
     MagazineLightRifleLowCapacityEmpty: 1
     MagazinePistolEmpty: 1
+    MagazineVector45Empty: 1 #CorvaxFrontier
   emaggedInventory:
     WeaponPistolViper: 1
 
@@ -36,6 +39,7 @@
     WeaponLaserPistolNF: 4294967295
     WeaponRifleGestio: 4294967295
     WeaponRifleNovaliteC1: 4294967295
+    WeaponSubMachineGunVector45: 4294967295 #CorvaxFrontier
     WeaponShotgunDoubleBarreled: 4294967295
     WeaponRevolverArgenti: 4294967295
     WeaponPistolUniversal: 4294967295
@@ -43,6 +47,7 @@
     BoxShotgunSlug: 4294967295
     BoxLethalshot: 4294967295
     BoxBeanbag: 4294967295
+    MagazineBoxVector45: 4294967295 #CorvaxFrontier
     MagazineBoxRifle: 4294967295
     MagazineBoxRifleRubber: 4294967295
     MagazineBoxLightRifle: 4294967295
@@ -55,6 +60,7 @@
     MagazineNovaliteC1Empty: 4294967295
     MagazineLightRifleLowCapacityEmpty: 4294967295
     MagazinePistolEmpty: 4294967295
+    MagazineVector45Empty: 4294967295 #CorvaxFrontier
   emaggedInventory:
     WeaponPistolViper: 1
 

@@ -22,6 +22,3 @@
   id: MedicalNF
   name: lathe-category-medical-nf
 
-- type: latheCategory
-  id: Seeds
-  name: lathe-category-seeds

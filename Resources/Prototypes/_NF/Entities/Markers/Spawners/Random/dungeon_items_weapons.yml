@@ -160,6 +160,7 @@
     - WeaponCaseLongSVSExpedition
     - L58Flatpack
     - AK570Flatpack
+    - WeaponCaseLongKD12 #Corvax-Frontier
     chance: 1.0
     offset: 0.0
     rarePrototypes:
@@ -249,6 +250,8 @@
     - WeaponCaseShortAdvancedLaserExpedition
     - Type35Flatpack
     - AK570Flatpack
+    - WeaponCaseSubMachineGunVector22 #CorvaxFrontier
+    - WeaponCaseWeaponSubMachineP90LRK #CorvaxFrontier
     #- WeaponCaseLongMusketExpedition
     chance: 1.0
     offset: 0.0

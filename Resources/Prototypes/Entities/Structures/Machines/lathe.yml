@@ -225,6 +225,7 @@
     - NFService # Frontier
     - NFScience # Frontier
     - NFPouches # Frontier
+    - CorvaxEquipment #Corvax-Frontier
   - type: EmagLatheRecipes
     emagDynamicPacks:
     - SecurityAmmo
@@ -436,7 +437,7 @@
 
 - type: entity
   id: AmmoTechFab
-  parent: [BlueprintReceiverBase, BaseLatheLube] # Frontier: added BlueprintReceiverBase
+  parent: [BlueprintReceiverBase, BaseLatheLube, BaseC1Contraband] # Frontier: added BlueprintReceiverBase #Corvax-Frontier КБ
   name: ammo techfab
   description: Prints the bare minimum of bullets that any budget military or armory could need. Nothing fancy.
   components:
@@ -614,35 +615,36 @@
   name: ore processor
   description: It produces sheets and ingots using ores.
   components:
-  - type: Sprite
-    sprite: Structures/Machines/ore_processor.rsi
-    layers:
-    - state: icon
-      map: ["enum.LatheVisualLayers.IsRunning"]
-    - state: unlit
-      shader: unshaded
-      map: ["enum.PowerDeviceVisualLayers.Powered"]
-    - state: inserting
-      map: ["enum.MaterialStorageVisualLayers.Inserting"]
-    - state: panel
-      map: ["enum.WiresVisualLayers.MaintenancePanel"]
-  - type: Machine
-    board: OreProcessorMachineCircuitboard
-  - type: MaterialStorage
-    ignoreColor: true
-    whitelist:
-      tags:
-      - Ore
-  - type: Lathe
-    idleState: icon
-    runningState: building
-    defaultProductionAmount: 10
-    productValueModifier: null # Frontier
-    staticPacks:
-    - OreSmelting
-    # - RGlassSmelting # Frontier: raw mats only
-  - type: PlaceableSurface # DeltaV: Allow ore bags to dump into it directly
-    isPlaceable: false # but not place on it if you just click it with a random item
+    - type: Sprite
+      sprite: Structures/Machines/ore_processor.rsi
+      layers:
+        - state: icon
+          map: ["enum.LatheVisualLayers.IsRunning"]
+        - state: unlit
+          shader: unshaded
+          map: ["enum.PowerDeviceVisualLayers.Powered"]
+        - state: inserting
+          map: ["enum.MaterialStorageVisualLayers.Inserting"]
+        - state: panel
+          map: ["enum.WiresVisualLayers.MaintenancePanel"]
+    - type: Machine
+      board: OreProcessorMachineCircuitboard
+    - type: MaterialStorage
+      ignoreColor: true
+      whitelist:
+        tags:
+          - Ore
+    - type: Lathe
+      idleState: icon
+      runningState: building
+      defaultProductionAmount: 10
+      productValueModifier: null # Frontier
+      staticPacks:
+      - OreSmelting
+      # - RGlassSmelting # Frontier: raw mats only
+      - CorvaxMaterialsStatic #Corvax-Frontier
+    - type: PlaceableSurface # DeltaV: Allow ore bags to dump into it directly
+      isPlaceable: false # but not place on it if you just click it with a random item
 
 - type: entity
   parent: OreProcessor
@@ -661,6 +663,7 @@
     - OreSmelting
     - RGlassSmelting
     - AdvancedSmelting
+    - CorvaxMaterialsStatic #Corvax-Frontier
 
 - type: entity
   parent: BaseLathe

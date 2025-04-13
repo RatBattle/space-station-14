@@ -44,6 +44,10 @@
   id: Materials
   name: lathe-category-materials
 
+- type: latheCategory
+  id: Seeds
+  name: lathe-category-seeds
+
 # Uniform printer
 - type: latheCategory
   id: Bedsheets

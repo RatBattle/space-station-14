@@ -11,13 +11,15 @@
 - type: pointOfInterest
   id: Tinnia
   parent: BasePOI
-  name: "Tinnia's Rest"
+  name: "Ресторан Тринньки"
   minimumDistance: 1200
   maximumDistance: 2900
   spawnGroup: RestStop
   gridPath: /Maps/_NF/POI/tinnia.yml
   addComponents:
   - type: StationTransit
+  - type: ProtectedGrid
+    noGridCollision: true #CorvaxFrontier
   - type: SolarPoweredGrid
     trackOnInit: true
     doNotCull: true

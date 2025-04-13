@@ -353,6 +353,69 @@
         - Sheriff
 
 - type: listing
+  id: UplinkSecurityWeaponLightMachineGunL2RPK
+  name:  uplink-security-WeaponLightMachineGunL2RPK-name
+  description: uplink-security-WeaponLightMachineGunL2RPK-desc
+  productEntity: WeaponLightMachineGunL2RPK
+  icon: { sprite: Corvax/Objects/Weapons/Guns/LMGs/L2RPK.rsi, state: base }
+  cost:
+    FrontierUplinkCoin: 20
+  categories:
+    - UplinkSecurityWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+- type: listing
+  id: UplinkSecurityWeaponSubMachineGunScorpion
+  name:  uplink-security-WeaponSubMachineGunScorpion-name
+  description: uplink-security-WeaponSubMachineGunScorpion-desc
+  productEntity: WeaponSubMachineGunScorpion
+  icon: { sprite: Corvax/Objects/Weapons/Guns/SMGs/scorpion.rsi, state: base }
+  cost:
+    FrontierUplinkCoin: 3
+  categories:
+    - UplinkSecurityWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+- type: listing
+  id: UplinkSecurityWeaponRifleScar12
+  name:  uplink-security-WeaponRifleScar12-name
+  description: uplink-security-WeaponRifleScar12-desc
+  productEntity: WeaponRifleScar12
+  icon: { sprite: Corvax/Objects/Weapons/Guns/Rifles/scar12.rsi, state: base }
+  cost:
+    FrontierUplinkCoin: 7
+  categories:
+    - UplinkSecurityWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+- type: listing
   id: UplinkSecurityEnergyGun
   name:  uplink-security-energygun-name
   description: uplink-security-energygun-desc
@@ -391,6 +454,26 @@
       whitelist:
         - Sheriff
 
+- type: listing # Corvax-Frontier
+  id: UplinkSecurityKS23
+  name:  uplink-security-ks23-name
+  description: uplink-security-ks23-desc
+  productEntity: WeaponShotgunKS23
+  icon: { sprite: /Textures/Corvax/Objects/Weapons/Guns/Shotguns/ks23.rsi, state: icon }
+  cost:
+    FrontierUplinkCoin: 3
+  categories:
+    - UplinkSecurityWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
 
 - type: listing
   id: UplinkSecurityHolo
@@ -504,7 +587,7 @@
   productEntity: BoxT3SuperCapacitor
   icon: { sprite: Objects/Storage/boxes.rsi, state: box}
   cost:
-    FrontierUplinkCoin: 4
+    FrontierUplinkCoin: 5 # CorvaxFrontier
   categories:
     - UplinkSecurityBundles
   conditions:
@@ -526,6 +609,38 @@
   icon: { sprite: Objects/Storage/boxes.rsi, state: box }
   cost:
     FrontierUplinkCoin: 1
+  categories:
+    - UplinkSecurityAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+
+- type: listing # Corvax-Frontier
+  id: UplinkSecurityKS23Flashbang
+  name: uplink-security-magazineks23flashbang-name
+  description: uplink-security-magazineks23flashbang-desc
+  productEntity: BoxMagazineKS23Flashbang
+  icon: { sprite: Objects/Storage/boxes.rsi, state: box }
+  cost:
+    FrontierUplinkCoin: 2
+  categories:
+    - UplinkSecurityAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+
+- type: listing # Corvax-Frontier
+  id: UplinkSecurityKS23Smoke
+  name: uplink-security-magazineks23smoke-name
+  description: uplink-security-magazineks23smoke-desc
+  productEntity: BoxMagazineKS23Smoke
+  icon: { sprite: Objects/Storage/boxes.rsi, state: box }
+  cost:
+    FrontierUplinkCoin: 2
   categories:
     - UplinkSecurityAmmo
   conditions:
@@ -1248,7 +1363,7 @@
   productEntity: ClothingBackpackDuffelNfsdTrackingBundle
   icon: { sprite: _NF/Clothing/Back/Duffels/nfsd_brown.rsi, state: icon }
   cost:
-    FrontierUplinkCoin: 4
+    FrontierUplinkCoin: 8 #CorvaxFrontier
   categories:
     - UplinkSecurityBundles
   conditions:
@@ -1264,7 +1379,7 @@
   productEntity: ClothingBackpackDuffelNfsdEmpBundle
   icon: { sprite: _NF/Clothing/Back/Duffels/nfsd_brown.rsi, state: icon }
   cost:
-    FrontierUplinkCoin: 4
+    FrontierUplinkCoin: 8 #CorvaxFrontier
   categories:
     - UplinkSecurityBundles
   conditions:
@@ -1301,7 +1416,7 @@
   productEntity: BoxEmpGrenadesAmmo
   icon: { sprite: Objects/Storage/boxes.rsi, state: box }
   cost:
-    FrontierUplinkCoin: 1
+    FrontierUplinkCoin: 2 #CorvaxFrontier
   categories:
     - UplinkSecurityAmmo
   conditions:
@@ -1359,4 +1474,25 @@
           - SecurityUplink
     - !type:BuyerJobCondition
       whitelist:
+        - Sheriff
+
+- type: listing # Corvax-Frontier
+  id: UplinkSecurityResearchDisk10000
+  name:  uplink-security-research-disk-10000-name
+  description: uplink-security-research-disk-10000-desc
+  productEntity: ResearchDisk10000
+  icon: { sprite: Objects/Specific/Research/researchdisk.rsi, state: icon }
+  cost:
+    FrontierUplinkCoin: 5
+  categories:
+    - UplinkSecurityUtility
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
         - Sheriff

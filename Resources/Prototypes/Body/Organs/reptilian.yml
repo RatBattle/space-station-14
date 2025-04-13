@@ -12,6 +12,22 @@
 #      - Pill
 #      - Crayon
 #      - Paper
+    # specialDigestible: # Frontier
+      # tags: # Frontier
+      # - Fruit # Frontier
+      # - ReptilianFood # Frontier
+      # - Meat # Frontier
+      # - Pill # Frontier
+      # - Crayon # Frontier
+      # - Paper # Frontier
+    specialDigestible: # Corvax-MRP
+      tags:
+      - Fruit
+      - ReptilianFood
+      - Meat
+      - Pill
+      - Crayon
+      - Paper
   - type: SolutionContainerManager
     solutions:
       stomach:

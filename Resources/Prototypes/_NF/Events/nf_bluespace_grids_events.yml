@@ -35,7 +35,7 @@
         - type: PreventPilot
         - type: ForceAnchor # Added post-FTL, so anchoring is fine.
         paths:
-        - /Maps/_NF/Bluespace/cache.yml
+        - /Maps/Corvax/Bluespace/cache.yml #Corvax-Frontier
     rewardAccounts:
       Nfsd: 1.0
 
@@ -75,7 +75,7 @@
         - type: PreventPilot
         - type: ForceAnchor
         paths:
-        - /Maps/_NF/Bluespace/vault.yml
+        - /Maps/Corvax/Bluespace/vault.yml #Corvax-Frontier
     rewardAccounts:
       Nfsd: 1.0
 
@@ -116,7 +116,7 @@
         - type: PreventPilot
         - type: ForceAnchor
         paths:
-        - /Maps/_NF/Bluespace/vaultsmall.yml
+        - /Maps/Corvax/Bluespace/vaultsmall.yml #Corvax-Frontier
     rewardAccounts:
       Nfsd: 1.0
 
@@ -155,7 +155,7 @@
         - type: PreventPilot
         - type: ForceAnchor
         paths:
-        - /Maps/_NF/Bluespace/syndieftlintercept.yml
+        - /Maps/Corvax/Bluespace/syndieftlintercept.yml #Corvax-Frontier
 
 - type: entity
   id: BluespaceWizardFederationScout
@@ -192,7 +192,7 @@
         - type: PreventPilot
         - type: ForceAnchor
         paths:
-        - /Maps/_NF/Bluespace/wizardprobealt.yml
+        - /Maps/Corvax/Bluespace/wizardprobealt.yml #Corvax-Frontier
 
 - type: entity
   id: BluespaceBloodMoon
@@ -229,7 +229,7 @@
         - type: PreventPilot
         - type: ForceAnchor
         paths:
-        - /Maps/_NF/Bluespace/bloodmoon.yml
+        - /Maps/Corvax/Bluespace/bloodmoon.yml #Corvax-Frontier
 
 - type: entity
   id: BluespaceCave
@@ -264,7 +264,7 @@
         - type: PreventPilot
         - type: ForceAnchor
         paths:
-        - /Maps/_NF/Bluespace/cave.yml
+        - /Maps/Corvax/Bluespace/cave.yml #Corvax-Frontier
 
 - type: entity
   id: BluespaceBrokenMcDelivery
@@ -298,4 +298,4 @@
           preventArtifactTriggers: true
         - type: PreventPilot
         paths:
-        - /Maps/_NF/Bluespace/mcevent.yml
+        - /Maps/Corvax/Bluespace/mcevent.yml #Corvax-Frontier

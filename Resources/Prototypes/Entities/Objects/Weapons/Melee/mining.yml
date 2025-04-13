@@ -35,6 +35,8 @@
     sprite: Objects/Weapons/Melee/pickaxe.rsi
     storedRotation: -45
   - type: UseDelay
+  - type: StaticPrice #CorvaxFrontier
+    price: 10
 
 - type: entity
   name: mining drill

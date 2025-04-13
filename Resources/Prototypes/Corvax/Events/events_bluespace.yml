@@ -1,0 +1,80 @@
+#Corvax-Frontier (by. Mersen)
+- type: entity
+  id: BluespaceCargoniaShip
+  parent: BaseStationEventShortDelay
+  components:
+  - type: StationEvent
+    startAnnouncement: station-event-bluespace-generic-ftl-start-announcement
+    startAudio:
+      path: /Audio/Misc/notice1.ogg
+    warningAnnouncement: station-event-bluespace-generic-ftl-warning-announcement
+    endAnnouncement: station-event-bluespace-generic-ftl-end-announcement
+    earliestStart: 80
+    minimumPlayers: 15
+    weight: 2
+    duration: 3800
+    maxDuration: 6400
+    reoccurrenceDelay: 180 # Only once per shift possible
+  - type: BluespaceErrorRule
+    groups:
+      grid: !type:GridSpawnGroup
+        nameLoc:
+        - station-event-bluespace-name-UnidentifiedVessel
+        minimumDistance: 1500
+        maximumDistance: 2500
+        addComponents:
+        - type: Gravity
+          enabled: true
+          inherent: true
+        - type: IFF
+          color: "#E10F9B"
+        - type: Shuttle
+          angularDamping: 999999
+          linearDamping: 999999
+        paths:
+        - /Maps/Corvax/Bluespace/RuinedHauler.yml #Corvax-Frontier
+        - /Maps/Corvax/Bluespace/RuinedBarge.yml #Corvax-Frontier
+        - /Maps/Corvax/Bluespace/RuinedCourser.yml #Corvax-Frontier
+        - /Maps/Corvax/Bluespace/RuinedComet.yml #Corvax-Frontier
+        - /Maps/Corvax/Bluespace/RuinedCrescent.yml #Corvax-Frontier
+        - /Maps/Corvax/Bluespace/RuinedInv.yml #Corvax-Frontier
+        - /Maps/Corvax/Bluespace/RuinedSprinter.yml #Corvax-Frontier
+        - /Maps/Corvax/Bluespace/cargomc.yml #Corvax-Frontier
+
+
+- type: entity
+  id: BluespaceSyndicateFTLRepeater
+  parent: BaseStationEventShortDelay
+  components:
+  - type: StationEvent
+    startAnnouncement: station-event-bluespace-generic-ftl-start-announcement
+    startAudio:
+      path: /Audio/Misc/notice1.ogg
+    warningAnnouncement: station-event-bluespace-generic-ftl-warning-announcement
+    endAnnouncement: station-event-bluespace-generic-ftl-end-announcement
+    earliestStart: 80
+    minimumPlayers: 15
+    weight: 1
+    duration: 3800
+    maxDuration: 6400
+    reoccurrenceDelay: 180 # Only once per shift possible
+  - type: BluespaceErrorRule
+    groups:
+      grid: !type:GridSpawnGroup
+        nameLoc:
+        - station-event-bluespace-name-UnidentifiedVessel
+        minimumDistance: 1500
+        maximumDistance: 2500
+        addComponents:
+        - type: Gravity
+          enabled: true
+          inherent: true
+        - type: IFF
+          color: "#E10F9B"
+        - type: Shuttle
+          angularDamping: 999999
+          linearDamping: 999999
+        paths:
+        - /Maps/Corvax/Bluespace/sindi.yml
+    rewardAccounts:
+      Nfsd: 1.0

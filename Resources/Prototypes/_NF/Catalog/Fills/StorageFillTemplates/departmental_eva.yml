@@ -2,6 +2,7 @@
 - type: entity
   abstract: true
   id: StorageFillEVASuitContractor
+  name: StorageFillEVASuitContractor
   description: Contains a standard issue contractor EVA kit.
   components:
   - type: StorageFill
@@ -14,6 +15,7 @@
 - type: entity
   abstract: true
   id: StorageFillEVASuitPilot
+  name: StorageFillEVASuitPilot
   description: Contains a standard issue pilot EVA kit.
   components:
   - type: StorageFill
@@ -26,6 +28,7 @@
 - type: entity
   abstract: true
   id: StorageFillEVASuitSr
+  name: StorageFillEVASuitSr
   description: Contains a standard issue station representative EVA kit.
   components:
   - type: StorageFill
@@ -38,6 +41,7 @@
 - type: entity
   abstract: true
   id: StorageFillEVASuitCaptain
+  name: StorageFillEVASuitCaptain
   description: Contains a standard issue captain EVA kit.
   components:
   - type: StorageFill
@@ -50,6 +54,7 @@
 - type: entity
   abstract: true
   id: StorageFillEVASuitEngineer
+  name: StorageFillEVASuitEngineer
   description: Contains a standard issue engineer EVA kit.
   components:
   - type: StorageFill
@@ -62,6 +67,7 @@
 - type: entity
   abstract: true
   id: StorageFillEVASuitAtmosTech
+  name: StorageFillEVASuitAtmosTech
   description: Contains a standard issue atmospheric technician EVA kit.
   components:
   - type: StorageFill
@@ -74,6 +80,7 @@
 - type: entity
   abstract: true
   id: StorageFillEVASuitCargo
+  name: StorageFillEVASuitCargo
   description: Contains a standard issue cargo technician EVA kit.
   components:
   - type: StorageFill
@@ -86,6 +93,7 @@
 - type: entity
   abstract: true
   id: StorageFillEVASuitSalvage
+  name: StorageFillEVASuitSalvage
   description: Contains a standard issue salvage specialist EVA kit.
   components:
   - type: StorageFill
@@ -99,6 +107,7 @@
 - type: entity
   abstract: true
   id: StorageFillEVASuitMedic
+  name: StorageFillEVASuitMedic
   description: Contains a standard issue medical specialist EVA kit.
   components:
   - type: StorageFill
@@ -111,6 +120,7 @@
 - type: entity
   abstract: true
   id: StorageFillEVASuitParamedic
+  name: StorageFillEVASuitParamedic
   description: Contains a standard issue paramedic voidsuit kit.
   components:
   - type: StorageFill
@@ -124,6 +134,7 @@
 - type: entity
   abstract: true
   id: StorageFillEVASuitScientist
+  name: StorageFillEVASuitScientist
   description: Contains a standard issue scientist EVA kit.
   components:
   - type: StorageFill
@@ -136,6 +147,7 @@
 - type: entity
   abstract: true
   id: StorageFillEVASuitJanitor
+  name: StorageFillEVASuitJanitor
   description: Contains a standard issue janitor EVA kit.
   components:
   - type: StorageFill
@@ -148,6 +160,7 @@
 - type: entity
   abstract: true
   id: StorageFillEVASuitServiceWorker
+  name: StorageFillEVASuitServiceWorker
   description: Contains a standard issue service worker EVA kit.
   components:
   - type: StorageFill
@@ -160,6 +173,7 @@
 - type: entity
   abstract: true
   id: StorageFillEVASuitChaplain
+  name: StorageFillEVASuitServiceWorker
   description: Contains a standard issue chaplain EVA kit.
   components:
   - type: StorageFill
@@ -173,6 +187,7 @@
 - type: entity
   abstract: true
   id: StorageFillEVASuitBoxerRed
+  name: StorageFillEVASuitBoxerRed
   description: Contains a red boxer EVA suit and standard issue EVA kit.
   components:
   - type: StorageFill
@@ -187,6 +202,7 @@
 - type: entity
   abstract: true
   id: StorageFillEVASuitBoxerGreen
+  name: StorageFillEVASuitBoxerGreen
   description: Contains a green boxer EVA suit and standard issue EVA kit.
   components:
   - type: StorageFill
@@ -201,6 +217,7 @@
 - type: entity
   abstract: true
   id: StorageFillEVASuitBoxerBlue
+  name: StorageFillEVASuitBoxerBlue
   description: Contains a blue boxer EVA suit and standard issue EVA kit.
   components:
   - type: StorageFill
@@ -215,6 +232,7 @@
 - type: entity
   abstract: true
   id: StorageFillEVASuitBoxerYellow
+  name: StorageFillEVASuitBoxerYellow
   description: Contains a yellow boxer EVA suit and standard issue EVA kit.
   components:
   - type: StorageFill
@@ -229,6 +247,7 @@
 - type: entity
   abstract: true
   id: StorageFillEVASuitBoxerRandom
+  name: StorageFillEVASuitBoxerRandom
   description: Contains a boxer EVA suit and standard issue EVA kit.
   components:
   - type: StorageFill
@@ -243,6 +262,7 @@
 - type: entity
   abstract: true
   id: StorageFillEVASuitHydro
+  name: StorageFillEVASuitHydro
   description: Contains a standard issue botanist EVA kit.
   components:
   - type: StorageFill
@@ -255,6 +275,7 @@
 - type: entity
   abstract: true
   id: StorageFillEVASuitMail
+  name: StorageFillEVASuitMail
   description: Contains a standard issue mail carrier EVA kit.
   components:
   - type: StorageFill
@@ -267,6 +288,7 @@
 - type: entity
   abstract: true
   id: StorageFillEVASuitMercenary
+  name: StorageFillEVASuitMercenary
   description: Contains a standard issue mercenary EVA kit.
   components:
   - type: StorageFill
@@ -280,6 +302,7 @@
 - type: entity
   abstract: true
   id: StorageFillEVASuitPrivateSec
+  name: StorageFillEVASuitPrivateSec
   description: Contains a standard issue private security EVA kit.
   components:
   - type: StorageFill
@@ -293,6 +316,7 @@
 - type: entity
   abstract: true
   id: StorageFillEVASuitNfsd
+  name: StorageFillEVASuitNfsd
   description: Contains a standard issue NFSD EVA kit.
   components:
   - type: StorageFill
@@ -307,6 +331,7 @@
 - type: entity
   abstract: true
   id: StorageFillEVASuitGoblin
+  name: StorageFillEVASuitGoblin
   description: Contains a traditional goblin EVA suit and standard EVA kit.
   components:
   - type: StorageFill
@@ -347,7 +372,7 @@
 - type: entity
   abstract: true
   id: StorageFillEVASuitFsb
-  description: Contains a standard issue Far Star Biotech (FSB) EVA suit. 
+  description: Contains a standard issue Far Star Biotech (FSB) EVA suit.
   components:
   - type: StorageFill
     contents:

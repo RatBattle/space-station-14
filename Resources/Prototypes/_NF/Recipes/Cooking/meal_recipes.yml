@@ -304,7 +304,6 @@
   name: cotton salad recipe
   result: FoodMothCottonSalad
   time: 5
-  group: MothFood
   reagents:
     OilOlive: 5
   solids:
@@ -358,7 +357,7 @@
     FoodCuredCarp: 1
   recipeType:
   - Assembler
-   
+
 # Donuts (uncooked as well as glazed) - frying handled by DeepFrySpawnComponent per-entity
 
 - type: microwaveMealRecipe

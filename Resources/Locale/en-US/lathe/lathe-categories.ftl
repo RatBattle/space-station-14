@@ -12,6 +12,7 @@ lathe-category-weapons = Weapons
 lathe-category-food = Food
 lathe-category-chemicals = Chemicals
 lathe-category-materials = Materials
+lathe-category-seeds = Seeds
 
 # Uniform
 lathe-category-bedsheets = Bedsheets

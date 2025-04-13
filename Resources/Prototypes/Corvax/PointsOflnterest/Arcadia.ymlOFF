@@ -1,0 +1,29 @@
+- type: pointOfInterest
+  id: Arcadia
+  name: База Аркадии
+  minimumDistance: 4500
+  maximumDistance: 6500
+  gridPath: /Maps/Corvax/POI/Arcadia.yml
+  addComponents:
+  - type: IFF
+    color: "#850d09"
+    flags: [HideLabel]
+    readOnly: true
+  - type: Shuttle
+    angularDamping: 999999
+    linearDamping: 999999
+
+- type: gameMap
+  id: Arcadia
+  mapName: База Аркадии
+  mapPath: /Maps/Corvax/POI/Arcadia.yml
+  minPlayers: 0
+  stations:
+    Arcadia:
+      stationProto: StandardFrontierOutpost
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'База Аркадии'
+        - type: StationJobs
+          availableJobs: {}
+        - type: StationDeadDropHintExempt

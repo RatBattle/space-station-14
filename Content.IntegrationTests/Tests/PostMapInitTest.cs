@@ -72,7 +72,6 @@ namespace Content.IntegrationTests.Tests
         };
 
         private static readonly string[] GameMaps = FrontierConstants.GameMapPrototypes; // Frontier: not inline constants
-
         /// <summary>
         /// Asserts that specific files have been saved as grids and not maps.
         /// </summary>

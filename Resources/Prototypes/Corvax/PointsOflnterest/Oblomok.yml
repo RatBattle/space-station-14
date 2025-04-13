@@ -1,0 +1,41 @@
+# Author Info
+# GitHub: -
+# Discord: autsaider_m
+# License: CC-BY-NC-ND-3.0
+# Corvax_frontier
+
+# Maintainer Info
+# GitHub: https://github.com/mersen-tyn
+# Discord: mersen
+
+# Notes:
+
+- type: pointOfInterest
+  id: Oblomok
+  name: Обломок
+  minimumDistance: 4500
+  maximumDistance: 6500
+  gridPath: /Maps/Corvax/POI/Oblomok.yml
+  addComponents:
+  - type: IFF
+    color: "#850d09"
+    flags: [HideLabel]
+    readOnly: true
+  - type: Shuttle
+    angularDamping: 999999
+    linearDamping: 999999
+
+- type: gameMap
+  id: Oblomok
+  mapName: Обломок
+  mapPath: /Maps/Corvax/POI/Oblomok.yml
+  minPlayers: 0
+  stations:
+    Oblomok:
+      stationProto: StandardFrontierOutpost
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Обломок'
+        - type: StationJobs
+          availableJobs: {}
+        - type: StationDeadDropHintExempt
